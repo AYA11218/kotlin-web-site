@@ -13,12 +13,13 @@ class ComposeMultiplatformCore(version: String, tagOrBranch: String) : Reference
                 gitUrl = "git@github.com:JetBrains/compose-multiplatform-core.git",
                 gitBranch = tagOrBranch,
                 pagesDir = "out/androidx/mpp/apiReferences/build/dokka/html",
-            ) {
-                dokkaBuildHtml {
-                    tasks = ":mpp:apiReferences:buildApiReferencesWithStories"
-                    gradleParams += " -PapiReferences.storiesRootPath=/stories"
+                steps = {
+                    step(dokkaBuildHtml {
+                        tasks = ":mpp:apiReferences:buildApiReferencesWithStories"
+                        gradleParams += " -PapiReferences.storiesRootPath=/stories"
+                    })
                 }
-            }
+            )
         }
     }
 }
