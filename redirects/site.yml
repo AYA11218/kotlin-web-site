@@ -59,3 +59,8 @@
 
 - from: /docs/foundation-faq.html
   to: https://kotlinfoundation.org/faq/
+
+- from:
+   - /api
+   - /docs/api
+  to: /docs/api-references.html
