@@ -65,7 +65,7 @@ fun ReferenceProject.makeReferencePages(
     outputDir: String = DEFAULT_DOKKA_PATH,
     vcsRoot: VcsRoot? = null,
     template: TemplateDep? = null,
-    steps: BuildSteps.() -> Unit = { step(dokkaBuildHtml(version)) }
+    steps: (BuildSteps.() -> Unit)? = null
 ) = BuildType {
     id = RelativeId("${project.id}_${version.replace(".", "")}_Build")
     name = "$version pages"
@@ -93,7 +93,10 @@ fun ReferenceProject.makeReferencePages(
     }
 
     steps {
-        steps()
+        when {
+            steps == null -> step(dokkaBuildHtml(version))
+            else -> steps()
+        }
     }
 }.also { this.project.buildType(it) }
 
@@ -105,7 +108,7 @@ fun ReferenceProject.makeAPIReference(
     templateDir: String? = null,
     pagesDir: String = DEFAULT_DOKKA_PATH,
     previousVersionDir: String? = null,
-    steps: BuildSteps.() -> Unit = {},
+    steps: (BuildSteps.() -> Unit)? = null,
 ): BuildType {
     val vcs = makeReferenceVcs(version, gitUrl, gitBranch)
     val template = makeReferenceTemplate(version, urlPart, templateVersion)
