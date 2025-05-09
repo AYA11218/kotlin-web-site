@@ -35,7 +35,7 @@ Welcome to the Kotlin API References page. Here you'll find links to the API doc
         </li>
         <li>
             <a href="https://kotlinlang.org/api/kotlinx-datetime/"><b>Date and Time (kotlinx-datetime)</b></a><br/>
-            <p>A multiplatform date and time library built on top of the <code>java.time</code> API for JVM and a native implementation for other platforms. It offers a consistent and concise API for working with time-based values.</p>
+            <p>A multiplatform date and time library built on top of the java.time API for JVM and a native implementation for other platforms. It offers a consistent and concise API for working with time-based values.</p>
             <img src="github.svg" width="18"/> <a href="https://github.com/Kotlin/kotlinx-datetime">kotlinx-datetime</a>
             <br/>
         </li>
