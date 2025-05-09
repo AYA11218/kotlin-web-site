@@ -1,20 +1,20 @@
 package tests.buildTypes
 
-import builds.apiReferences.kotlinx.coroutines.KotlinxCoroutinesBuildApiReference
-import builds.apiReferences.kotlinx.serialization.KotlinxSerializationBuildApiReference
 import jetbrains.buildServer.configs.kotlin.BuildStep
 import jetbrains.buildServer.configs.kotlin.BuildType
 import jetbrains.buildServer.configs.kotlin.FailureAction
 import jetbrains.buildServer.configs.kotlin.buildFeatures.PullRequests
 import jetbrains.buildServer.configs.kotlin.buildFeatures.pullRequests
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.triggers.vcs
+import references.builds.kotlinx.coroutines.KotlinxCoroutinesBuildApiReference
+import references.builds.kotlinx.serialization.KotlinxSerializationBuildApiReference
+import vcsRoots.KotlinLangOrg
 
 object ApiReferencesTemplateTest: BuildType({
   name = "Api References Template Test"
 
   vcs {
-    root(vcsRoots.KotlinLangOrg)
+    root(KotlinLangOrg)
   }
 
   steps {
@@ -44,7 +44,7 @@ object ApiReferencesTemplateTest: BuildType({
 
   features {
     pullRequests {
-      vcsRootExtId = "${vcsRoots.KotlinLangOrg.id}"
+      vcsRootExtId = "${KotlinLangOrg.id}"
       provider = github {
         authType = token {
           token = "%github.oauth%"

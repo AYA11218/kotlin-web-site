@@ -1,4 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
+import kotlinlang.SiteProject
+import references.BuildApiReferencesProject
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -25,13 +27,13 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2024.07"
 
 project {
-  subProject(builds.kotlinlang.SiteProject)
-  subProject(builds.apiReferences.BuildApiReferencesProject)
+  subProject(SiteProject)
+  subProject(BuildApiReferencesProject)
   subProject(tests.TestsProject)
 
   subProjectsOrder = arrayListOf(
-    builds.kotlinlang.SiteProject,
-    builds.apiReferences.BuildApiReferencesProject,
+    SiteProject,
+    BuildApiReferencesProject,
     tests.TestsProject
   )
 

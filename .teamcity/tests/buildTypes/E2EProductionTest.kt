@@ -5,13 +5,14 @@ import jetbrains.buildServer.configs.kotlin.buildFeatures.notifications
 import jetbrains.buildServer.configs.kotlin.buildSteps.ScriptBuildStep
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.schedule
+import vcsRoots.KotlinLangOrg
 
 
 object E2EProductionTest : BuildType({
   name = "E2E Test in Production"
 
   vcs {
-    root(vcsRoots.KotlinLangOrg)
+    root(KotlinLangOrg)
   }
 
   triggers {
