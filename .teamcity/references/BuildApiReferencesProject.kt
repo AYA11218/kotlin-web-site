@@ -1,5 +1,6 @@
 package references
 
+import BuildParams.COMPOSE_API
 import jetbrains.buildServer.configs.kotlin.Project
 import references.builds.kgp.KotlinGradlePluginBuildApiReference
 import references.builds.kgp.KotlinGradlePluginBuildSearchIndex
@@ -63,4 +64,6 @@ object BuildApiReferencesProject : Project({
     vcsRoot(KotlinKGP)
 
     template(PrepareDokkaTemplate)
+
+    subProject(COMPOSE_API.project)
 })
