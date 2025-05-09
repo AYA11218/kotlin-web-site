@@ -14,9 +14,10 @@ class ComposeMultiplatformCore(version: String, tagOrBranch: String) : Reference
                 gitBranch = tagOrBranch,
                 pagesDir = "out/androidx/mpp/apiReferences/build/dokka/html",
                 steps = {
-                    step(dokkaBuildHtml {
+                    step(dokkaBuildHtml(version) {
                         tasks = ":mpp:apiReferences:buildApiReferencesWithStories"
                         gradleParams += " -PapiReferences.storiesRootPath=/stories"
+                        jdkHome = "%env.JDK_17_0%"
                     })
                 }
             )
