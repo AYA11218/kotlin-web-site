@@ -39,7 +39,7 @@ object BuildParams {
   const val KOTLINX_METADATA_TITLE = KOTLINX_METADATA_ID
 
   const val COMPOSE_ID = "compose-multiplatform"
-  val COMPOSE_API = ComposeMultiplatformCore("1.8", "api-reference/1.8")
+  val COMPOSE_API = ComposeMultiplatformCore("1.8.0", "api-reference/1.8")
 
   const val SEARCH_APP_ID = "7961PKYRXV"
   const val SEARCH_INDEX_NAME = "prod_KOTLINLANG_WEBHELP"
