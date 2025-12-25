@@ -1,0 +1,199 @@
+.healthcareHero {
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.benefitCard {
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefitCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.benefitIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.benefitTitle {
+    color: #1976d2;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.benefitDescription {
+    color: #666;
+    line-height: 1.6;
+}
+
+.architectureDiagram {
+    padding: 2rem;
+    background-color: #e3f2fd;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.platformIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.platformIcon {
+    text-align: center;
+    padding: 1rem;
+}
+
+.platformIcon div:first-child {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sharedLogic {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #1976d2;
+    font-weight: 600;
+}
+
+.securityFeatures {
+    padding: 2rem;
+    background-color: #f1f8e9;
+    border-radius: 12px;
+}
+
+.securityTitle {
+    color: #388e3c;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.securityList {
+    list-style: none;
+    padding: 0;
+    color: #2e7d32;
+}
+
+.securityItem {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.securityItem:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.securityItem span {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.statCard {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+    transform: scale(1.05);
+}
+
+.statIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.statTitle {
+    color: #1976d2;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.statDescription {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .benefitsGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .platformIcons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1976d2;
+    font-weight: 700;
+}
+
+.sectionSubtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
