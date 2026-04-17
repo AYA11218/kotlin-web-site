@@ -160,7 +160,7 @@ class HelloFunctionFinderProcessor : SymbolProcessor() {
 * [Incremental processing notes](ksp-incremental.md)
 * [Multiple round processing notes](ksp-multi-round.md)
 * [KSP on multiplatform projects](ksp-multiplatform.md)
-* [Running KSP from command line](ksp-command-line.md)
+* [Running KSP from command line](https://github.com/google/ksp/blob/main/docs/ksp2cmdline.md)
 * [FAQ](ksp-faq.md)
 
 ## Supported libraries
@@ -186,6 +186,7 @@ The table includes a list of popular libraries on Android and their various stag
 | SealedX          | [Officially supported](https://github.com/skydoves/sealedx)                                       |
 | Ktorfit          | [Officially supported](https://github.com/Foso/Ktorfit)                                           |
 | Mockative        | [Officially supported](https://github.com/mockative/mockative)                                    |
+| Kotest           | [Officially supported](https://github.com/kotest/kotest)                                          |
 | DeeplinkDispatch | [Supported via airbnb/DeepLinkDispatch#323](https://github.com/airbnb/DeepLinkDispatch/pull/323)  |
 | Dagger           | [Alpha](https://dagger.dev/dev-guide/ksp)                                                         |
 | Motif            | [Alpha](https://github.com/uber/motif)                                                            |

@@ -9,12 +9,12 @@ object BuildParams {
   const val DOKKA_TEMPLATES_VERSION = "2.0.0"
 
   const val KOTLINX_COROUTINES_RELEASE_TAG = "master"
-  const val KOTLINX_COROUTINES_RELEASE_LABEL = "1.10.2"
+  const val KOTLINX_COROUTINES_RELEASE_LABEL = "1.11.0-rc01"
   const val KOTLINX_COROUTINES_ID = "kotlinx.coroutines"
   const val KOTLINX_COROUTINES_TITLE = KOTLINX_COROUTINES_ID
 
   const val KOTLINX_SERIALIZATION_RELEASE_TAG = "master"
-  const val KOTLINX_SERIALIZATION_RELEASE_LABEL = "v1.10.0"
+  const val KOTLINX_SERIALIZATION_RELEASE_LABEL = "v1.11.0"
   const val KOTLINX_SERIALIZATION_ID = "kotlinx.serialization"
   const val KOTLINX_SERIALIZATION_TITLE = KOTLINX_SERIALIZATION_ID
 
@@ -31,7 +31,7 @@ object BuildParams {
   const val KOTLIN_RELEASE_TAG = "whyoleg/dokka2-sync"
   const val KOTLIN_RELEASE_LABEL = "2.3.0"
 
-  const val CORE_API_BUILD_ID = "Kotlin_KotlinRelease_230_LibraryReferenceLatestDocs"
+  const val CORE_API_BUILD_ID = "Kotlin_KotlinRelease_2320_LibraryReferenceLatestDocs"
   const val CORE_API_TITLE = "Core API"
 
   const val KOTLINX_METADATA_ID = "kotlinx-metadata-jvm"

@@ -244,7 +244,7 @@ The default target version for Kotlin/JVM compilations is `1.8`. The `1.6` targe
 Please migrate to JVM target 1.8 or above. Learn how to update the JVM target version for:
 
 * [Gradle](gradle-compiler-options.md#attributes-specific-to-jvm)
-* [Maven](maven-compile-package.md#attributes-specific-to-jvm)
+* [Maven](maven-kotlin-compiler.md#attributes-specific-to-jvm)
 * [The command-line compiler](compiler-reference.md#jvm-target-version)
 
 ## Kotlin/Native
@@ -977,7 +977,7 @@ kotlin.compiler.execution.strategy=out-of-process
 ```
 
 You can also use the compile task property `compilerExecutionStrategy`. Learn more about this on
-the [Gradle page](gradle-compilation-and-caches.md#defining-kotlin-compiler-execution-strategy).
+the [Compiler execution strategy page](compiler-execution-strategy.md).
 
 ### Removal of deprecated options, methods, and plugins
 
